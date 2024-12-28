@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Box</title>
+    <link href="chess.css" rel="stylesheet">
+</head>
+<body>
+    <table id="chessboard"></table>
+
+    <script>
+        const chessboard = document.getElementById('chessboard');
+        const pieces = [
+            ['♜', '♞', '♝', '♛', '♚', '♝', '♞', '♜'], // Black pieces
+            ['♟', '♟', '♟', '♟', '♟', '♟', '♟', '♟'], // Black pawns
+            [], [], [], [], // Empty rows
+            ['♙', '♙', '♙', '♙', '♙', '♙', '♙', '♙'], // White pawns
+            ['♖', '♘', '♗', '♕', '♔', '♗', '♘', '♖']  // White pieces
+        ];
+
+        for (let i = 0; i < 8; i++) {
+            const row = document.createElement('tr');
+            for (let j = 0; j < 8; j++) {
+                const cell = document.createElement('td');
+                cell.className = (i + j) % 2 === 0 ? 'white' : 'black';
+                if (pieces[i][j]) {
+                    cell.textContent = pieces[i][j];
+                    cell.style.textAlign = 'center';
+                    cell.style.verticalAlign = 'middle';
+                    cell.style.fontSize = '24px';
+                }
+                row.appendChild(cell);
+            }
+            chessboard.appendChild(row);
+        }
+    </script>
+        <tr>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+        </tr>
+        <tr>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+        </tr>
+        <tr>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+        </tr>
+        <tr>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+        </tr>
+
+        <tr>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+        </tr>
+
+        <tr>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+        </tr>
+        <tr>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+        </tr>
+        <tr>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+            <td class="White"></td>
+            <td class="Black"></td>
+        </tr>
+    </table>
+</body>
+</html>
