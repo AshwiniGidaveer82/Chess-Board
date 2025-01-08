@@ -4,7 +4,7 @@ A Chess Board Override system allows players or administrators to modify the sta
 
  **Features**
  -----------------------------------------------------------------------------------------------------------------------------------------
-** Dynamic Chessboard**
+**Dynamic Chessboard**
 
 Interactive chessboard to move pieces or modify positions.
 Drag-and-drop functionality for ease of use.
