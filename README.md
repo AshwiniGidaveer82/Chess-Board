@@ -32,3 +32,8 @@ Ability to undo/redo overrides.
 **Multi-Device Synchronization**
 
 Real-time updates for multiplayer scenarios when the override is applied.
+
+**Technologies Used**
+------------------------------------------------------------------------------------------------------------------------------------------
+**HTML & CSS:** For layout and styling.
+
